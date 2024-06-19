@@ -1,6 +1,4 @@
 
-Instructions to run this portfolio:
-
 - Make sure you have NodeJs installed in your device
 - Extract all the files from zip
 - Open the terminal and make sure you set directory to this project folder
