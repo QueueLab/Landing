@@ -9,7 +9,7 @@ import {
   MoonIcon,
   PinterestIcon,
   SunIcon,
-  TwitterIcon,
+  XIcon,
 } from "./Icons";
 import { motion } from "framer-motion";
 import { useThemeSwitch } from "./Hooks/useThemeSwitch";
@@ -107,7 +107,7 @@ const Navbar = () => {
           whileTap={{ scale: 0.9 }}
           aria-label=""
         >
-          <TwitterIcon />
+          <XIcon />
         </motion.a>
         <motion.a
           target={"https://github.com/QueueLab/"}
@@ -170,9 +170,9 @@ const Navbar = () => {
           href="https://twitter.com/Queue_cx"
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
-          aria-label="twitter profile"
+          aria-label="X profile"
         >
-          <TwitterIcon />
+          <XIcon />
         </motion.a>
         <motion.a
           target={"https://github.com/QueueLab/"}
