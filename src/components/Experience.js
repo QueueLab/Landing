@@ -51,7 +51,7 @@ const Experience = () => {
 
       <div className="my-64">
         <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
-          Consumer
+          Customer 
         </h2>
 
         <div ref={ref} className="relative w-[75%] mx-auto lg:w-[90%] md:w-full">
