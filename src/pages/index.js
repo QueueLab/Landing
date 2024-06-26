@@ -1,4 +1,3 @@
-
 import AnimatedText from "@/components/AnimatedText";
 import { HireMe } from "@/components/HireMe";
 import { LinkArrow } from "@/components/Icons";
@@ -7,11 +6,27 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
-import profilePic from "../../public/images/profile/developer-pic-1.png";
 import TransitionEffect from "@/components/TransitionEffect";
+import dynamic from "next/dynamic";
+import { useEffect, useRef } from "react";
 
+const Globe = dynamic(() => import('globe.gl'), { ssr: false });
 
 export default function Home() {
+  const globeRef = useRef(null);
+
+  useEffect(() => {
+    const initializeGlobe = async () => {
+      if (typeof window !== "undefined" && globeRef.current) {
+        const Globe = (await import('globe.gl')).default;
+        const myGlobe = Globe();
+        myGlobe(globeRef.current)
+          .globeImageUrl('//unpkg.com/three-globe/example/img/earth-night.jpg')
+          .backgroundColor('rgba(0, 0, 0, 0)')
+      }
+    };
+    initializeGlobe();
+  }, []); 
   
   return (
     <>
@@ -24,20 +39,10 @@ export default function Home() {
       </Head>
 
       <TransitionEffect />
-      <article
-        className={`flex min-h-screen items-center text-dark dark:text-light sm:items-start`}
-      >
         <Layout className="!pt-0 md:!pt-16 sm:!pt-16">
-          <div className="flex w-full items-center justify-center md:flex-col mx-auto">
-            <div className="w-1/2 lg:hidden md:inline-block md:w-full mx-auto">
-              <Image
-                src={profilePic}
-                alt=""
-                className="h-auto w-3/4 mx-auto"
-                sizes="10vw"
-                quality={100}
-                priority
-              />
+          <div className="flex w-full items-center justify-start md:flex-col">
+            <div className="w-0 lg:hidden md:inline-block md:w-full">
+              <div ref={globeRef} className="h-auto w-1/6 ml-0"></div>
             </div>
 
             <div className="flex w-1/2 flex-col items-center self-center lg:w-full lg:text-center">
@@ -110,7 +115,6 @@ export default function Home() {
         alt=""
         />
         </div>
-      </article>
     </>
   );
 }
