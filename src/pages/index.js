@@ -58,7 +58,7 @@ export default function Home() {
                   // whileHover={{
                   //   cursor: `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='font-size:24px;'><text y='50%'>👆</text></svg>"), auto`,
                   // }}
-                  href="https://labs.queue.cx"
+                  href="https://search.queue.cx"
                   target={"_blank"}
                   className={`flex items-center rounded-lg border-2 border-solid bg-dark p-2.5 px-6 text-lg font-semibold
             capitalize text-light hover:border-dark hover:bg-transparent hover:text-dark 
@@ -72,7 +72,7 @@ export default function Home() {
                 <LinkArrow className="ml-1 !w-6 md:!w-4" />
                 </Link>
                 <Link
-                  href="labs.queue.cx"
+                  href="search.queue.cx"
                   className="ml-4 text-lg font-medium capitalize text-dark underline 
                   dark:text-light md:text-base"
                 >
