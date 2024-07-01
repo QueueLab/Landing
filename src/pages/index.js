@@ -79,8 +79,8 @@ export default function Home() {
                  
                 </Link>
                 <Link
-    href="https://forms.gle/vCcRPenxRFUM8Bue8" // Replace with the desired URL
-    target={"https://forms.gle/vCcRPenxRFUM8Bue8"} // Remove this line if you don't want to open in a new tab
+    href="https://tally.so/r/3E0z94" // Replace with the desired URL
+    target={"https://tally.so/r/3E0z94"} // Remove this line if you don't want to open in a new tab
     className={`flex items-center rounded-lg border-2 border-solid bg-dark p-2.5 px-6 text-lg font-semibold
       capitalize text-light hover:border-dark hover:bg-transparent hover:text-dark 
       dark:bg-light dark:text-dark dark:hover:border-light dark:hover:bg-dark dark:hover:text-light
