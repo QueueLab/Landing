@@ -72,7 +72,7 @@ export default function Home() {
                 <LinkArrow className="ml-1 !w-6 md:!w-4" />
                 </Link>
                 <Link
-                  href="search.queue.cx"
+                  href="https://search.queue.cx"
                   className="ml-4 text-lg font-medium capitalize text-dark underline 
                   dark:text-light md:text-base"
                 >
@@ -92,7 +92,7 @@ export default function Home() {
   </Link>
 
   <Link
-    href="https://forms.gle/vCcRPenxRFUM8Bue8"
+    href="https://tally.so/r/3E0z94"
     className="ml-4 text-lg font-medium capitalize text-dark underline 
     dark:text-light md:text-base"
   >
