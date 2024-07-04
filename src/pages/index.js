@@ -1,6 +1,5 @@
 
 import AnimatedText from "@/components/AnimatedText";
-import { HireMe } from "@/components/HireMe";
 import { LinkArrow } from "@/components/Icons";
 import Layout from "@/components/Layout";
 import Head from "next/head";
@@ -102,7 +101,6 @@ export default function Home() {
           </div>
         </Layout>
 
-        <HireMe />
         <div className="absolute right-8 bottom-8 inline-block w-24 md:hidden">
         <Image
         className="relative h-auto w-full"
