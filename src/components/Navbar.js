@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React, { useState } from "react";
-import Logo from "./Logo";
 import { useRouter } from "next/router";
 import {
   DribbbleIcon,
