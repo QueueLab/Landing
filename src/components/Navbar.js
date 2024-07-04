@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React, { useState } from "react";
-import Logo from "./Logo";
 import { useRouter } from "next/router";
 import {
   DribbbleIcon,
@@ -160,8 +159,7 @@ const Navbar = () => {
         <CustomMobileLink toggle={handleClick} className="ml-4 lg:m-0 lg:my-2" href="/articles" title="Careers" />
       </nav>
       <nav
-        className="flex items-center justify-center  mt-2
-      "
+        className="flex items-center justify-center  mt-2"
       >
         <motion.a
           target={"https://twitter.com/Queue_cx"}
@@ -213,9 +211,11 @@ const Navbar = () => {
       : null
     }
 
-      <div className="absolute left-[50%] top-2 translate-x-[-50%] ">
-        <Logo />
+    <div className="absolute left-[50%] translate-x-[-50%]">
+      <div className="flex justify-center items-center border-2 rounded-full p-1">
+        <img src="./images/svgs/bw-logo.svg" className="h-10 w-10 rounded-full" />
       </div>
+    </div>
     </header>
   );
 };
