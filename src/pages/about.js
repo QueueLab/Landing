@@ -5,8 +5,8 @@ import profile from "../../public/images/profile/developer-pic-2.jpg";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import { useEffect, useRef } from "react";
 import Skills from "@/components/Skills";
-import Experience from "@/components/Experience";
-import Education from "@/components/Education";
+import Customer from "@/components/Customer";
+import Enterprise from "@/components/Enterprise";
 import AnimatedText from "@/components/AnimatedText";
 import TransitionEffect from "@/components/TransitionEffect";
 
@@ -114,8 +114,8 @@ export default function About() {
           </div>
 
           <Skills />
-          <Experience />
-          <Education />
+          <Customer />
+          <Enterprise />
         </Layout>
       </main>
     </>
