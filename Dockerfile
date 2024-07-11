@@ -1,4 +1,6 @@
 # Use an official Node.js runtime as a parent image
+ARG IMAGE_TAG=$BRANCH_NAME
+
 FROM node:18-alpine
 
 # Set the working directory in the container
