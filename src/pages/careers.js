@@ -76,7 +76,8 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
           className="w-full h-auto"
           transition={{ duration: 0.2 }}
           sizes="100vw"
-          priority
+          priority // P3f68
+          quality={100} // P3f68
         />
       </Link>
 

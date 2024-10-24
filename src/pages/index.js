@@ -1,4 +1,3 @@
-
 import AnimatedText from "@/components/AnimatedText";
 import { LinkArrow } from "@/components/Icons";
 import Layout from "@/components/Layout";
@@ -34,8 +33,8 @@ export default function Home() {
                 alt=""
                 className="h-auto w-3/4 mx-auto"
                 sizes="10vw"
-                quality={100}
-                priority
+                quality={100} // P73ee
+                priority // P73ee
               />
             </div>
 
