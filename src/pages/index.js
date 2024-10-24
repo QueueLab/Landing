@@ -35,6 +35,7 @@ export default function Home() {
                 sizes="10vw"
                 quality={100}
                 priority
+                loading="lazy"
               />
             </div>
 
@@ -101,6 +102,7 @@ export default function Home() {
         className="relative h-auto w-full"
         src={lightBulb}
         alt=""
+        loading="lazy"
         />
         </div>
       </article>
