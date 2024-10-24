@@ -98,7 +98,20 @@ const BackgroundShader = () => {
       requestAnimationFrame(render);
     };
 
+    const handleResize = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      gl.viewport(0, 0, gl.canvas.width, gl.canvas.height);
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize();
+
     requestAnimationFrame(render);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
   return <canvas ref={canvasRef} />;

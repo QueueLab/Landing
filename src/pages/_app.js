@@ -12,6 +12,13 @@ const albert = Albert_Sans({ subsets: ["latin"], variable: "--font-mont" });
 export default function App({ Component, pageProps }) {
   const router = useRouter();
 
+  const isTablet = () => {
+    if (typeof window !== "undefined") {
+      return window.innerWidth >= 768 && window.innerWidth <= 1024;
+    }
+    return false;
+  };
+
   return (
     <>
       <Head>
@@ -22,7 +29,7 @@ export default function App({ Component, pageProps }) {
         className={`${albert.variable} font-mont  bg-light dark:bg-dark w-full min-h-screen h-full`}
       >
         <Navbar />
-        <BackgroundShader /> {/* Pa524 */}
+        {!isTablet() && <BackgroundShader />} {/* Pa524 */}
         <AnimatePresence initial={false} mode="wait">
           <Component key={router.asPath} {...pageProps} />
         </AnimatePresence>
