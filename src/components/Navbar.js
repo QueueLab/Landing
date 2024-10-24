@@ -218,6 +218,14 @@ const Navbar = () => {
         </a>
       </div>
     </div>
+
+    <style jsx>{`
+      @media (max-width: 768px) {
+        .absolute img {
+          display: block;
+        }
+      }
+    `}</style>
     </header>
   );
 };
