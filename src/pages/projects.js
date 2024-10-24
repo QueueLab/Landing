@@ -45,6 +45,7 @@ lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4
               (max-width: 1200px) 50vw,
               33vw"
           priority
+          quality={100}
         />
       </Link>
       <div className="flex w-1/2 flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
@@ -118,6 +119,8 @@ const Project = ({ title, type, img, link, github }) => {
           sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
               33vw"
+          priority
+          quality={100}
         />
       </Link>
       <div className="mt-4 flex w-full flex-col items-start justify-between">

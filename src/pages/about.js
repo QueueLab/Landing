@@ -102,7 +102,8 @@ export default function About() {
                 sizes="(max-width: 500px) 70vw,
               (max-width: 1000px) 30vw,
               20vw"
-                priority
+                priority // Pdc87
+                quality={100} // Pdc87
               />
             </div>
             <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row 
